@@ -1,7 +1,10 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
 
-import Random from './components/Random'
+import Counter from './components/Counter'
+// import Button from './components/Button'
+// import Titles from './components/Titles'
+// import Random from './components/Random'
 // import MinMax from './components/MinMax'
 // import Primeiro from './components/Primeiro'
 // import CompPadrao, { Comp1, Comp2 } from './components/Multi'
@@ -20,18 +23,28 @@ import Random from './components/Random'
 
 export default () => (
     <View style={style.App}>
+
+        <Counter inicial={10} passo={5}/>
+        <Counter passo={29}/>
+        <Counter inicial={126}/>
+
+        {/*
+        <Button />
+        <Titles principal='Cadastro' secundario='Tela de cadastro do produto' />
         <Random min={1} max={60} />
         <Random min={1} max={60} />
         <Random min={1} max={60} />
         <Random min={1} max={60} />
         <Random min={1} max={60} />
         <Random min={1} max={60} />
-        {/* <MinMax min={3} max={29} />
+        <Random min={1} max={60} />
+        <MinMax min={3} max={29} />
         <MinMax min={5132} max={3524}/>
         <Primeiro />
         <CompPadrao />
         <Comp1 />
-        <Comp2 /> */}
+        <Comp2 />
+        */}
     </View>
 )
 
