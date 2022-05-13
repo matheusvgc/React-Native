@@ -1,7 +1,9 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
 
-import Counter from './components/Counter'
+import Pai from './components/indireta/Pai'
+// import Pai from './components/direta/Pai'
+// import Counter from './components/Counter'
 // import Button from './components/Button'
 // import Titles from './components/Titles'
 // import Random from './components/Random'
@@ -24,11 +26,13 @@ import Counter from './components/Counter'
 export default () => (
     <View style={style.App}>
 
+        <Pai />
+
+        {/*/
+        <Pai />
         <Counter inicial={10} passo={5}/>
         <Counter passo={29}/>
         <Counter inicial={126}/>
-
-        {/*
         <Button />
         <Titles principal='Cadastro' secundario='Tela de cadastro do produto' />
         <Random min={1} max={60} />
