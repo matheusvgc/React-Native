@@ -1,7 +1,11 @@
 import React from 'react'
-import { View, StyleSheet } from 'react-native'
+import { SafeAreaView, StyleSheet } from 'react-native'
 
-import CounterV2 from './components/contador/CounterV2'
+import Familia from './components/relacao/Familia'
+import Membro from './components/relacao/Membros'
+// import ParImpar from './components/ParImpar'
+// import Diferenciar from './components/Diferenciar'
+// import CounterV2 from './components/contador/CounterV2'
 // import Pai from './components/indireta/Pai'
 // import Pai from './components/direta/Pai'
 // import Counter from './components/Counter'
@@ -25,11 +29,23 @@ import CounterV2 from './components/contador/CounterV2'
 // export default () => <Text>Componente simplificando mais ainda a sintaxe</Text>
 
 export default () => (
-    <View style={style.App}>
+    <SafeAreaView style={style.App}>
 
-        <CounterV2 />
+        <Familia>
+            <Membro nome = 'Matheus' sobrenome= 'Garcia' />
+            <Membro nome = 'Paula' sobrenome= 'Garcia' />
+        </Familia>
+        <Familia>
+            <Membro nome = 'João' sobrenome= 'Pereira' />
+            <Membro nome = 'Carla' sobrenome= 'Pereira' />
+            <Membro nome = 'Mauro' sobrenome= 'Pereira' />
+            <Membro nome = 'Maria' sobrenome= 'Pereira' />
+        </Familia>
 
         {/*/
+        <ParImpar num = {2} />
+        <Diferenciar />
+        <CounterV2 />
         <Pai />
         <Pai />
         <Counter inicial={10} passo={5}/>
@@ -51,7 +67,7 @@ export default () => (
         <Comp1 />
         <Comp2 />
         */}
-    </View>
+    </SafeAreaView>
 )
 
 const style = StyleSheet.create({
