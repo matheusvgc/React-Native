@@ -1,8 +1,11 @@
 import React from 'react'
 import { SafeAreaView, StyleSheet } from 'react-native'
 
-import Familia from './components/relacao/Familia'
-import Membro from './components/relacao/Membros'
+import ListaProdutos from './components/produtos/ListaProdutos'
+
+// import UsuarioLogado from './components/UsuarioLogado'
+// import Familia from './components/relacao/Familia'
+// import Membro from './components/relacao/Membros'
 // import ParImpar from './components/ParImpar'
 // import Diferenciar from './components/Diferenciar'
 // import CounterV2 from './components/contador/CounterV2'
@@ -31,6 +34,14 @@ import Membro from './components/relacao/Membros'
 export default () => (
     <SafeAreaView style={style.App}>
 
+        <ListaProdutos />
+
+        {/*/
+        <UsuarioLogado usuario = {{nome: 'José Guimarães', email: 'jose@gmail.com'}} />
+        <UsuarioLogado usuario = {{nome: 'Guilherme Reis'}} />
+        <UsuarioLogado usuario = {{email: 'analima@gmail.com'}} />
+        <UsuarioLogado usuario = {null} />
+        <UsuarioLogado usuario = {{}} />
         <Familia>
             <Membro nome = 'Matheus' sobrenome= 'Garcia' />
             <Membro nome = 'Paula' sobrenome= 'Garcia' />
@@ -40,9 +51,8 @@ export default () => (
             <Membro nome = 'Carla' sobrenome= 'Pereira' />
             <Membro nome = 'Mauro' sobrenome= 'Pereira' />
             <Membro nome = 'Maria' sobrenome= 'Pereira' />
+            <Membro nome = 'Estevão' sobrenome= 'Pereira' />
         </Familia>
-
-        {/*/
         <ParImpar num = {2} />
         <Diferenciar />
         <CounterV2 />
